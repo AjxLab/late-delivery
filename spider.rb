@@ -81,6 +81,8 @@ end
 
 
 if __FILE__ == $0
+  send_line('テスト')
+  footer_exit
   crawl(multi: false)
   footer_exit
 end
