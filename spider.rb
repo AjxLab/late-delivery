@@ -24,7 +24,7 @@ def crawl(delay: 3, depth_limit: nil, multi: false, exit_all: true, error_alert:
 
   task = Proc.new { |url|
     begin
-      agent = Husc.new(url)
+      agent = Husc.new(url, user_agent: "Safari/537.36")
 
       # スクレイピング
       scraping(agent, delay: delay, depth_limit: depth_limit)
