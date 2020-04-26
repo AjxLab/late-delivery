@@ -1,0 +1,14 @@
+file:
+  'db/develop.sqlite3'
+tables:
+  - users:
+    - name: 'name'
+      type: 'string'
+      opts:
+        - 'null: false'
+    - name: 'age'
+      type: 'integer'
+      opts:
+        - 'null: false'
+    - type: 'timestamps'
+
